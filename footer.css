@@ -1,0 +1,132 @@
+/* Enlever les bords arondis au menu de navigation */
+* {
+  border-radius: 0 !important;
+}
+
+
+/* Sticky footer styles -------------------------------------------------- */
+
+html {
+     position: relative;
+     min-height: 100%;
+}
+body {
+     margin-bottom: 60px;
+}
+footer {
+	/*position en bas de page par rapport à son parent, ici html c'est à dire la page entière */
+     position: absolute;
+	  /* place le footer en bas de page */
+     bottom: 0;
+     width: 100%;
+  /* Règle ici la hauteur du pied de page */
+     height: 60px;
+     line-height: 60px;
+     background-color: #43baa0;
+}
+footer div {
+     text-align: center; /* aligne le texte du footer */
+}
+footer div img{
+     width : 5%;  /* règle la largeur et hauteur des images correspondant aux liens des validations html et css */
+     height : 5%;
+}
+ .text-muted{
+     vertical-align : center;
+}
+
+body > .container {
+     padding: 60px 15px 0;
+}
+ .footer > .container {
+     padding-right: 15px;
+     padding-left: 15px;
+}
+body div div img { /* règle les images du tableau membres */
+     width: 25%;
+     height: 100%;
+     border-radius: 15px !important; /* permet le bord arrondie des images du tableau des membres */
+     padding: 1px;
+}
+ .tab .row{
+     border-collapse: collapse;  /* bordures fusionnées pour le tableau entier (car contenu dans une seule ligne) */
+}
+ .tab .col-xs-12, .tab .col-sm-6, .tab .col-md-6, .tab .col-lg-3, .tab .col-xl-3{
+	 border-bottom:solid 1px grey;
+     text-align : center;
+     overflow: auto;
+}
+ .parent-container {
+     display: flex;
+}
+ .carousel-inner > .item > img {
+     width:640px;
+     height:360px;
+}
+
+/* Autre CSS pour les autres pages */
+
+.icon {
+     color: blue;
+     font-size:20px;
+}
+
+td a {
+  display: block;
+  height: 100%;
+}
+
+
+
+/* Responsive design pour téléphone (pour la page FAQ ) */
+
+@media (max-width: 600px) {
+        .q {
+          font-size: 25px;
+        }
+        .q2 {
+          font-size: 15px;
+        }
+}
+
+/* Responsive design du text */
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1.6rem;
+  }
+}
+
+
+/* CSS de la page FAQ */
+
+.reponse {
+  padding:10px;
+  text-indent: 10px;
+  margin:10px;
+  border-radius:5px!important;
+  background-color: #c9c9c9;
+}
+
+.btn {
+  border-radius: 8px !important ;
+  position:absolute!important;
+  right:0!important;
+}
+
+.form-control{
+    border-radius: 8px !important ;
+	
+}

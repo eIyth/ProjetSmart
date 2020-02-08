@@ -1,0 +1,36 @@
+body {
+	position:relative !important;	
+}
+
+.card {
+visibility:hidden; 	/* Cacher l'audio et la vidéo pour l'impression */
+}
+
+.carousel1 {
+	visibility:hidden !important;
+	/* cacher le carousel pour l'impréssion  */
+}
+
+.intro1 {
+	min-width:100% !important;
+	/* Changer la largeur du text  */
+	position:absolute !important;
+	/* Le mettre en haut de la page */
+	top:0 !important;
+}
+
+iframe {
+	visibility:hidden;
+	/* cacher la carte et la vidéo youtube  */
+}
+
+.youtube {
+	visibility : hidden;
+	/* cacher la titre de la division youtube  */
+}
+
+.footer {
+	/* mettre le footer en bas de page */
+	position:fixed;
+	bottom:0;
+}

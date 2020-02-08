@@ -1,0 +1,108 @@
+/* Enlever les bords arondis au menu de navigation */
+* {
+  border-radius: 0  !important;
+}
+
+
+/* Sticky footer styles -------------------------------------------------- */
+
+html {
+     position: relative;
+     min-height: 100%;
+}
+body {
+     margin-bottom: 60px;
+}
+footer {
+	/*position en bas de page par rapport à son parent, ici html c'est à dire la page entière */
+     position: absolute;
+	  /* place le footer en bas de page */
+     bottom: 0;
+     width: 100%;
+  /* Règle ici la hauteur du pied de page */
+     height: 60px;
+	/*  indique la hauteur minimale des lignes au sein de l'élément */
+	line-height : 60px;
+     background-color: #e0e0d1;
+}
+footer div {
+     text-align: center; /* aligne le texte du footer */
+}
+footer div img{
+     width : 5%;  /* règle la largeur et hauteur des images correspondant aux liens des validations html et css */
+     height : 5%;
+}
+
+body > .container {
+     padding: 60px 15px 0; /* ceci décale le texte de 15px à droite et 60px de haut */
+}
+ .footer > .container {
+     padding-right: 15px; 
+     padding-left: 15px;
+}
+body div div img { /* règle la taille des images du tableau membres */
+     width: 25%;
+     height: 100%;
+     padding: 1px;
+}
+.tab img {
+ border-radius: 15px !important; /* permet le bord arrondie des images du tableau des membres */
+}
+ .tab .row{
+     border-collapse: collapse;  /* bordures fusionnées pour le tableau entier (car contenu dans une seule ligne) */
+}
+ .tab .col-xs-12, .tab .col-sm-6, .tab .col-md-6, .tab .col-lg-3, .tab .col-xl-3{
+	 border-bottom:solid 1px black;   /* évite d'avoir des bordures de tout les côtées ( moins jolie sur petit écran) 
+										Et donc de les avoir juste en dessous*/
+     text-align : center;
+     overflow: auto;  /* pour éviter aux images de déborder du tableau */
+}
+
+ .carousel-inner > .item > img { /* fixer une taille aux images du carousel */
+     width:640px;
+     height:360px;
+}
+
+/* Autre CSS pour les autres pages */
+
+.icon {
+     color: blue;
+     font-size:20px;
+}
+
+td a {
+  display: block;
+  height: 100%;
+}
+
+
+
+/* Responsive design pour téléphone (pour la page FAQ ) */
+
+@media screen and(max-width: 600px) {
+        .q {
+          font-size: 25px;
+        }
+        .q2 {
+          font-size: 15px;
+        }
+}
+
+/* CSS de la page FAQ */
+
+.reponse {
+  padding:10px; /* Pour eviter de coller le text au bords */
+  text-indent: 10px; /* Faire un alinea au text */
+  border-radius:5px!important; /* arrondir les bord des réponses */
+  background-color: #c9c9c9; /* La couleur du fond des réponses */
+}
+
+.btn {
+  border-radius: 8px !important ; /* arrondir les bouttons pour voir les réponses */
+  position:absolute!important; /* Coller les bouttons */
+  right:0!important; /* à droite */
+}
+
+.form-control{
+    border-radius: 8px !important ; /* arrondir les cases de formulaire */
+}
